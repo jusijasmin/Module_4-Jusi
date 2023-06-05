@@ -2,24 +2,24 @@
    "name": "Bio",
    "short_name": "Hasmin",
    "icons": [{
-     "src": "img/logo-ccs-60.png",
+     "src": "assets/img/logo-ccs-60.png",
        "sizes": "60x60",
        "type": "image/png",
        "purpose": "any maskable"
        
      }, {
-       "src": "img/logo-ccs-90.png",
+       "src": "assets/img/logo-ccs-90.png",
        "sizes": "90x90",
        "type": "image/png",
        "purpose": "any maskable"
      }, {
-       "src": "img/logo-ccs-100.png",
+       "src": "assets/img/logo-ccs-100.png",
        "sizes": "100x100",
        "type": "image/png",
        "purpose": "any maskable"
      }
      , {
-       "src": "img/logo-ccs-512.png",
+       "src": "assets/img/logo-ccs-512.png",
        "sizes": "512x512",
        "type": "image/png",
        "purpose": "any maskable"
