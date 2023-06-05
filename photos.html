@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/styles.css">
+
+        <script>
+            let list ="";
+            fetch('https://jsonplaceholder.typicode.com/photos')
+            .then(response => response.json())
+            .then(json => {
+                json.forEach(photos=> {
+                   list += `<li style="color: white;"><strong><br>${photos.title}</strong><br><br><img src="${photos.url}" alt="${photos.title}"></li>`
+                });
+                document.querySelector("ol").innerHTML = list
+            })
+        </script>
+        <style>
+            body{
+                background-color: black;
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="index.html">Welcome:)</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="photos.html">Gallery</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav><br><br><br><br>
+      <ol></ol>
+      
+    </body>
+</html>
